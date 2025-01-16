@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  java-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.java
+    container_name: java-hello-world
+    networks:
+      - hello-world-network
+
+  html-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.html
+    container_name: html-hello-world
+    ports:
+      - "8080:80"
+    networks:
+      - hello-world-network
+
+networks:
+  hello-world-network:
+    driver: bridge
+
