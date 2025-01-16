@@ -11,3 +11,9 @@ javac HelloWorld.java
   ├── Dockerfile.html
   ├── index.html
   └── docker-compose.yml
+
+ ** Build and Run**
+**To build and run the containers, use the following commands:**
+
+docker-compose build
+docker-compose up
