@@ -17,3 +17,6 @@ javac HelloWorld.java
 
 docker-compose build
 docker-compose up
+
+-> The Java application will run in the java-hello-world container and output Hello, World from Java! to the logs.
+-> The HTML application will be served via Nginx on port 8080 (accessible in your browser at http://localhost:8080).
